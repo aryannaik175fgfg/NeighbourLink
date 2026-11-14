@@ -1,0 +1,33 @@
+.nl-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.nl-field__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--nl-text-muted);
+}
+
+.nl-field__input {
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius);
+  background: var(--nl-surface);
+  color: var(--nl-text);
+}
+
+.nl-field__input:focus {
+  border-color: var(--nl-secondary);
+}
+
+.nl-field__input--error {
+  border-color: var(--nl-error);
+}
+
+.nl-field__error {
+  font-size: 12px;
+  color: var(--nl-error);
+}

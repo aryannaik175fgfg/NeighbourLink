@@ -1,0 +1,17 @@
+.nl-map {
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  overflow: hidden;
+  min-height: 420px;
+}
+
+.nl-map__canvas {
+  height: 420px;
+  width: 100%;
+}
+
+.nl-map__popup-area {
+  margin: 4px 0 8px;
+  font-size: 12px;
+  color: var(--nl-text-muted);
+}

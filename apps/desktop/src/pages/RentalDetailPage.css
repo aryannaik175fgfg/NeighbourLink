@@ -1,0 +1,88 @@
+.nl-rental-detail__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  max-width: none;
+}
+
+.nl-rental-detail__back {
+  display: inline-block;
+  margin-bottom: var(--space-4);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nl-rental-detail__grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-5);
+  max-width: 960px;
+}
+
+.nl-rental-detail__main,
+.nl-rental-detail__book {
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--nl-shadow);
+}
+
+.nl-rental-detail__book h2 {
+  margin: 0 0 var(--space-2);
+  font-size: 18px;
+}
+
+.nl-rental-detail__hint {
+  margin: 0 0 var(--space-3);
+  font-size: 13px;
+  color: var(--nl-text-muted);
+}
+
+.nl-rental-detail__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.nl-rental-detail__price {
+  font-weight: 700;
+  color: var(--nl-primary);
+}
+
+.nl-rental-detail__price span {
+  font-weight: 500;
+  color: var(--nl-text-muted);
+  font-size: 13px;
+}
+
+.nl-rental-detail__quote {
+  padding: var(--space-3);
+  background: var(--nl-surface-muted);
+  border-radius: var(--nl-radius);
+  font-size: 13px;
+}
+
+.nl-rental-detail__quote-total {
+  margin: var(--space-1) 0 0;
+  font-weight: 600;
+}
+
+.nl-rental-detail__busy {
+  margin-top: var(--space-5);
+  max-width: 480px;
+  font-size: 13px;
+  color: var(--nl-text-muted);
+}
+
+.nl-rental-detail__busy ul {
+  margin: var(--space-2) 0 0;
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 800px) {
+  .nl-rental-detail__grid {
+    grid-template-columns: 1fr;
+  }
+}

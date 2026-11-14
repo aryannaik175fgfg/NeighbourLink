@@ -1,0 +1,30 @@
+.nl-auth-form__title {
+  margin: 0 0 var(--space-1);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.nl-auth-form__subtitle {
+  margin: 0 0 var(--space-4);
+  font-size: 13px;
+  color: var(--nl-text-muted);
+  line-height: 1.5;
+}
+
+.nl-auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.nl-auth-form__error {
+  margin: 0;
+  font-size: 13px;
+  color: var(--nl-error);
+}
+
+.nl-auth-form__footer {
+  margin: var(--space-4) 0 0;
+  font-size: 13px;
+  color: var(--nl-text-muted);
+}

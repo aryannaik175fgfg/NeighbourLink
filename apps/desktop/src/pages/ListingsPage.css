@@ -1,0 +1,82 @@
+.nl-listings-page__layout {
+  display: grid;
+  grid-template-columns: minmax(320px, 1fr) minmax(260px, 360px);
+  gap: var(--space-5);
+  align-items: start;
+  max-width: 1100px;
+}
+
+.nl-listings-form {
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  box-shadow: var(--nl-shadow);
+}
+
+.nl-listings-form__title {
+  margin: 0 0 var(--space-2);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nl-listings-owned {
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--nl-shadow);
+}
+
+.nl-listings-owned__list {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.nl-listings-owned__item {
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--nl-border);
+}
+
+.nl-listings-owned__item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.nl-listings-owned__head {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  align-items: baseline;
+}
+
+.nl-listings-owned__status {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--nl-text-muted);
+}
+
+.nl-listings-owned__meta {
+  margin: var(--space-1) 0 0;
+  font-size: 13px;
+  color: var(--nl-text-muted);
+}
+
+.nl-text-muted {
+  color: var(--nl-text-muted);
+  font-size: 13px;
+}
+
+@media (max-width: 900px) {
+  .nl-listings-page__layout {
+    grid-template-columns: 1fr;
+  }
+}

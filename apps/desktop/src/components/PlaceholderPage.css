@@ -1,0 +1,39 @@
+.nl-page__header {
+  margin-bottom: var(--space-5);
+  max-width: 640px;
+}
+
+.nl-page__title {
+  margin: 0 0 var(--space-2);
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--nl-primary);
+}
+
+.nl-page__desc {
+  margin: 0;
+  color: var(--nl-text-muted);
+  line-height: 1.6;
+}
+
+.nl-page__empty {
+  max-width: 520px;
+  padding: var(--space-5);
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  box-shadow: var(--nl-shadow);
+}
+
+.nl-page__empty-title {
+  margin: 0 0 var(--space-2);
+  font-weight: 600;
+}
+
+.nl-page__empty-body {
+  margin: 0;
+  color: var(--nl-text-muted);
+  font-size: 13px;
+  line-height: 1.6;
+}

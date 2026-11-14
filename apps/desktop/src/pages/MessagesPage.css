@@ -1,0 +1,47 @@
+.nl-messages-list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0 0;
+  max-width: 640px;
+}
+
+.nl-messages-list__item {
+  display: block;
+  padding: var(--space-4);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  margin-bottom: var(--space-3);
+  background: var(--nl-surface);
+}
+
+.nl-messages-list__preview {
+  margin: var(--space-2) 0 0;
+  font-size: 13px;
+  color: var(--nl-text-muted);
+}
+
+.nl-conversation__messages {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0;
+  max-width: 720px;
+}
+
+.nl-conversation__messages li {
+  padding: var(--space-3);
+  margin-bottom: var(--space-2);
+  border-radius: var(--nl-radius);
+  background: var(--nl-surface-muted);
+  max-width: 85%;
+}
+
+.nl-conversation__messages li.is-mine {
+  margin-left: auto;
+  background: rgba(27, 67, 50, 0.08);
+}
+
+.nl-conversation__composer textarea {
+  width: 100%;
+  max-width: 720px;
+  margin-bottom: var(--space-3);
+}

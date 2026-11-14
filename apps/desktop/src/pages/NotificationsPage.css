@@ -1,0 +1,40 @@
+.nl-notifications__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-4);
+  max-width: 720px;
+}
+
+.nl-notifications__list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-4) 0 0;
+  max-width: 720px;
+}
+
+.nl-notifications__card {
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  padding: var(--space-4);
+  margin-bottom: var(--space-3);
+}
+
+.nl-notifications__list .is-unread .nl-notifications__card {
+  border-color: var(--nl-primary);
+  box-shadow: var(--nl-shadow);
+}
+
+.nl-notifications__link,
+.nl-notifications__dismiss {
+  display: inline-block;
+  margin-top: var(--space-2);
+  font-size: 13px;
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--nl-primary);
+}

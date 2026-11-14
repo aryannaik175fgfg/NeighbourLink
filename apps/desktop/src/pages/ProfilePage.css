@@ -1,0 +1,70 @@
+.nl-profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: var(--space-5);
+  align-items: start;
+  max-width: 900px;
+}
+
+.nl-profile-card {
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  box-shadow: var(--nl-shadow);
+}
+
+.nl-profile-card__title {
+  margin: 0 0 var(--space-2);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nl-profile-textarea {
+  padding: 10px 12px;
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius);
+  background: var(--nl-surface);
+  resize: vertical;
+  min-height: 96px;
+}
+
+.nl-profile-success {
+  margin: 0;
+  color: var(--nl-success);
+  font-size: 13px;
+}
+
+.nl-profile-dl {
+  margin: 0;
+}
+
+.nl-profile-dl dt {
+  font-size: 12px;
+  color: var(--nl-text-muted);
+  margin-top: var(--space-3);
+}
+
+.nl-profile-dl dt:first-child {
+  margin-top: 0;
+}
+
+.nl-profile-dl dd {
+  margin: var(--space-1) 0 0;
+  font-weight: 500;
+}
+
+.nl-profile-roles {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .nl-profile-grid {
+    grid-template-columns: 1fr;
+  }
+}

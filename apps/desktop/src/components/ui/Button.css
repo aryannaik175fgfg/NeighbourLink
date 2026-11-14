@@ -1,0 +1,55 @@
+.nl-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 10px 16px;
+  border-radius: var(--nl-radius);
+  border: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.nl-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.nl-btn--full {
+  width: 100%;
+}
+
+.nl-btn--primary {
+  background: var(--nl-primary);
+  color: #fff;
+}
+
+.nl-btn--primary:hover:not(:disabled) {
+  background: var(--nl-primary-hover);
+}
+
+.nl-btn--secondary {
+  background: var(--nl-surface);
+  border-color: var(--nl-border);
+  color: var(--nl-text);
+}
+
+.nl-btn--secondary:hover:not(:disabled) {
+  background: var(--nl-surface-muted);
+}
+
+.nl-btn--ghost {
+  background: transparent;
+  color: var(--nl-text-muted);
+}
+
+.nl-btn--ghost:hover:not(:disabled) {
+  background: var(--nl-surface-muted);
+  color: var(--nl-text);
+}
+
+.nl-btn--danger {
+  background: var(--nl-error);
+  color: #fff;
+}

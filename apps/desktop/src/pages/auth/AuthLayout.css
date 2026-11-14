@@ -1,0 +1,60 @@
+.nl-auth {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-6);
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(138, 154, 130, 0.15), transparent 50%),
+    var(--nl-bg);
+}
+
+.nl-auth__panel {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: var(--space-6);
+  width: min(960px, 100%);
+  align-items: center;
+}
+
+.nl-auth__brand {
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--nl-primary);
+  letter-spacing: -0.03em;
+}
+
+.nl-auth__tagline {
+  margin: var(--space-2) 0 var(--space-4);
+  font-size: 16px;
+  color: var(--nl-text-muted);
+}
+
+.nl-auth__blurb {
+  margin: 0;
+  max-width: 420px;
+  line-height: 1.65;
+  color: var(--nl-text);
+}
+
+.nl-auth__card {
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  padding: var(--space-5);
+  box-shadow: var(--nl-shadow);
+}
+
+.nl-auth__switch {
+  margin: var(--space-4) 0 0;
+  text-align: center;
+  font-size: 13px;
+  color: var(--nl-text-muted);
+}
+
+@media (max-width: 800px) {
+  .nl-auth__panel {
+    grid-template-columns: 1fr;
+  }
+}

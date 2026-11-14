@@ -1,0 +1,26 @@
+.nl-mentorship__card {
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  padding: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.nl-mentorship__card h2 {
+  margin: 0 0 var(--space-3);
+  font-size: 15px;
+}
+
+.nl-mentorship__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nl-mentorship__list li {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--nl-border);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}

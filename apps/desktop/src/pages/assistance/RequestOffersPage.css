@@ -1,0 +1,30 @@
+.nl-offer-compare {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin-top: var(--space-4);
+}
+
+.nl-offer-compare th,
+.nl-offer-compare td {
+  border: 1px solid var(--nl-border);
+  padding: var(--space-3);
+  text-align: left;
+  vertical-align: top;
+}
+
+.nl-offer-compare th {
+  background: var(--nl-surface-muted);
+  font-weight: 600;
+}
+
+.nl-offer-compare__price {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.nl-offer-compare__work {
+  max-width: 280px;
+  font-size: 13px;
+  color: var(--nl-text-muted);
+}

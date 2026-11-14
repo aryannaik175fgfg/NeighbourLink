@@ -1,0 +1,45 @@
+@import "./tokens.css";
+@import "./page.css";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--nl-text);
+  background: var(--nl-bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--nl-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--nl-accent);
+  outline-offset: 2px;
+}

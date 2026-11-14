@@ -1,0 +1,32 @@
+.nl-job-timeline {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0 0 0 var(--space-3);
+  border-left: 2px solid var(--nl-border);
+}
+
+.nl-job-timeline li {
+  position: relative;
+  padding: 0 0 var(--space-3) var(--space-4);
+}
+
+.nl-job-timeline__dot {
+  position: absolute;
+  left: calc(-1 * var(--space-3) - 5px);
+  top: 4px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--nl-primary);
+}
+
+.nl-job-timeline__summary {
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.nl-job-timeline__time {
+  font-size: 12px;
+  color: var(--nl-text-muted);
+}

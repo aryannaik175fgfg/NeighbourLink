@@ -1,0 +1,60 @@
+.nl-assist-explore__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.nl-assist-explore__cta {
+  display: inline-flex;
+  padding: 10px 14px;
+  border-radius: var(--nl-radius);
+  background: var(--nl-primary);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.nl-assist-explore__cta--secondary {
+  background: var(--nl-surface);
+  color: var(--nl-primary);
+  border: 1px solid var(--nl-border);
+}
+
+.nl-assist-explore__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-3);
+}
+
+.nl-assist-card {
+  background: var(--nl-surface);
+  border: 1px solid var(--nl-border);
+  border-radius: var(--nl-radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--nl-shadow);
+}
+
+.nl-assist-card h3 {
+  margin: 0 0 var(--space-1);
+  font-size: 16px;
+}
+
+.nl-assist-card__area,
+.nl-assist-card__meta,
+.nl-assist-card__rating {
+  font-size: 12px;
+  color: var(--nl-text-muted);
+  margin: var(--space-1) 0;
+}
+
+.nl-assist-card__intro {
+  font-size: 13px;
+  margin: var(--space-2) 0;
+  line-height: 1.5;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
